@@ -1,0 +1,136 @@
+/*!
+ _ _  _
+| | || | etc
+| | || | INTERPARK UI Development Team
+`___'|_| v2.5.24
+
+ATTENTION!
+THIS IS ONLY INTENDED FOR UI-PREVIEW(ui.interpark.com),
+AND SHOULD NEVER BE USED IN PRODUCTION!
+
+*/
+html,
+body {
+  height: 100%;
+}
+
+.ticketAppDown {
+  position: relative;
+  display: table;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: calc(env(safe-area-inset-bottom));
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Droid Sans", "Helvetica Neue", "Apple SD Gothic Neo", "sans-serif", sans-serif;
+}
+
+.ticketAppDown::after {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -58.5px;
+  content: "";
+  display: block;
+  width: 117px;
+  height: 15px;
+  background: url("//openimage.interpark.com/2021/ticketAppDown/ci-ticket.svg");
+}
+
+.ticketAppDown .titleWrap {
+  margin: 71px auto 80px;
+  text-align: center;
+}
+
+.ticketAppDown .titleWrap h1 {
+  margin-bottom: 13px;
+}
+
+.ticketAppDown .titleWrap h2 {
+  font-size: 20px;
+  color: #666;
+  font-weight: normal;
+}
+
+.ticketAppDown .btn a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ticketAppDown .btn a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background-repeat: no-repeat;
+  vertical-align: -3px;
+}
+
+.ticketAppDown .btnAndroid {
+  background-color: #abc050;
+  margin-bottom: 15px;
+}
+
+.ticketAppDown .btnAndroid::before {
+  background-image: url("//openimage.interpark.com/2021/ticketAppDown/icon-android.svg");
+}
+
+.ticketAppDown .btnIphone {
+  background-color: #000;
+}
+
+.ticketAppDown .btnIphone::before {
+  background-image: url("//openimage.interpark.com/2021/ticketAppDown/icon-ios.svg");
+}
+
+.ticketAppDown .notice {
+  margin-top: 40px;
+  padding: 0 5px 40px;
+  line-height: 24px;
+  color: #666;
+  font-size: 13px;
+}
+
+.ticketAppDown .desktopMsg {
+  display: none;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .ticketAppDown .showDesktop {
+    display: block;
+  }
+  .ticketAppDown .showMobile {
+    display: none;
+  }
+  .ticketAppDown .innerWrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .ticketAppDown .titleWrap {
+    margin: 0 auto 50px;
+  }
+  .ticketAppDown .titleWrap h2 {
+    font-size: 18px;
+  }
+  .ticketAppDown .desktopMsg > img {
+    margin-bottom: 30px;
+  }
+  .ticketAppDown .desktopMsg p {
+    font-weight: bold;
+    color: #000;
+    line-height: 26px;
+    font-size: 17px;
+  }
+  .ticketAppDown::after {
+    display: none;
+  }
+}
