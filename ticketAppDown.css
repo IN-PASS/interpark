@@ -2,11 +2,7 @@
  _ _  _
 | | || | etc
 | | || | INTERPARK UI Development Team
-`___'|_| v2.5.24
-
-ATTENTION!
-THIS IS ONLY INTENDED FOR UI-PREVIEW(ui.interpark.com),
-AND SHOULD NEVER BE USED IN PRODUCTION!
+`___'|_| v2.5.30
 
 */
 html,
@@ -23,6 +19,11 @@ body {
   box-sizing: border-box;
   padding-bottom: calc(env(safe-area-inset-bottom));
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Droid Sans", "Helvetica Neue", "Apple SD Gothic Neo", "sans-serif", sans-serif;
+}
+
+.ticketAppDown button:active,
+.ticketAppDown a:active {
+  opacity: .9;
 }
 
 .ticketAppDown::after {
